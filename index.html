@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <title>LOVE YOU ALOT</title>
+  <head>
+    <style>
+      body {
+        background-image: url("./WhatsApp\ Image\ 2023-01-16\ at\ 11.58.26\ PM.jpeg");
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .abc{
+        background-color: aqua;
+        border-radius: 10px;
+      }
+
+      .heart {
+        color: pink;
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p class="heart">❤️</p>
+      <audio id="love-song" src="./HS-Sant-Kripal-Singh-Ji-Maharaj.mp3"></audio>
+      <button class="abc" onclick="showLove()">Click here </button>
+      <p class="heart">❤️</p>
+    </div>
+    <audio id="love-song" src="./HS-Sant-Kripal-Singh-Ji-Maharaj.mp3"></audio>
+    <script>
+      function showLove() {
+        document.getElementById("love-song").play();
+        alert("I Love You Anishka \nWill you be my valentine \nAnishka Bakshi banegi ???");
+        
+      }
+    </script>
+  </body>
+</html>
