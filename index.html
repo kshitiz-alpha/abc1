@@ -10,25 +10,70 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
       }
+      button{
+        size: 1220px;
+      }
+      .di{
+        height: 200px;
+  position: relative;
+      }
+
       .abc{
         background-color: aqua;
         border-radius: 10px;
+        height: 70px;
+        margin: 0;
+       position: relative;
+       top: 50%;
+       left: 25rem;
+       
+        
       }
 
       .heart {
-        color: pink;
         font-size: 50px;
+      }
+    
+      .mar img{
+        width: 300px;
+        height: 300px;
+        border: 10px  solid rgba(0, 0, 0, 0.737);
+        border-radius: 30px;
+        margin-top: 200px;
+
       }
     </style>
   </head>
   <body>
     <div>
-      <p class="heart">❤️</p>
+      <marquee class="mar" behavior="scroll" scrollamount="8" direction="right">
+        <p class="heart">❤️ ❤️ ❤️ ❤️  ❤️ ❤️ ❤️  ❤️ ❤️ ❤️  ❤️ ❤️ ❤️  ❤️ ❤️ ❤️  ❤️ ❤️ ❤️ </p>
+        
+        </marquee>
       <audio id="love-song" src="./HS-Sant-Kripal-Singh-Ji-Maharaj.mp3"></audio>
+      <div class="di">
       <button class="abc" onclick="showLove()">Click here 9th feb </button>
       <button class="abc" onclick="showLove1()">Click here 10th feb </button>
-      <p class="heart">❤️</p>
+      <button class="abc" onclick="showLove2()">Click here 11th feb </button>
+    </div>
+      <marquee class="mar" behavior="scroll" scrollamount="8" direction="right">
+        <img src="./ce7e451b-2d3c-48d7-accd-bad5d93f9028.JPG" alt="Anishka">
+        <img src="./ea9c1af5-8d23-4542-a3af-ae93b5d48b1f.JPG" alt="Anishka">
+        <img src="./IMG_0346.JPG" alt="Anishka">
+        <img src="./IMG_0575.PNG" alt="Anishka">
+        <img src="./IMG_0644.JPG" alt="Anishka">
+        <img src="./IMG_0688.PNG" alt="Anishka">
+        <img src="./IMG_0690.PNG" alt="Anishka">
+        <img src="./IMG_0940.JPG" alt="Anishka">
+        
+
+      </marquee>
+      <marquee class="mar" behavior="scroll" scrollamount="8" direction="right">
+      <p class="heart">❤️ ❤️ ❤️ ❤️  ❤️ ❤️ ❤️  ❤️ ❤️ ❤️  ❤️ ❤️ ❤️  ❤️ ❤️ ❤️  ❤️ ❤️ ❤️ </p>
+      
+      </marquee>
     </div>
     <audio id="love-song" src="./HS-Sant-Kripal-Singh-Ji-Maharaj.mp3"></audio>
     <script>
@@ -40,6 +85,11 @@
       function showLove1() {
         document.getElementById("love-song").play();
         alert("Happy Teddy day my cutestest tedduuuuu anishkaaaa");
+        
+      }
+      function showLove2() {
+        document.getElementById("love-song").play();
+        alert("Happy Hug day my love I love you alot words mai jada express nhi karna aata but kasam se dil se bohot jada i love you ");
         
       }
     </script>
