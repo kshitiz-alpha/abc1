@@ -19,6 +19,17 @@
         height: 70px;
   position: relative;
       }
+      .abc1{
+        background-color: rgb(255, 102, 209);
+        color: white;
+        border-radius: 130px;
+        height: 70px;
+        margin: 0;
+       position: relative;
+       top: 50%;
+       left: 31rem;
+
+      }
 
       .abc{
         background-color: aqua;
@@ -48,17 +59,21 @@
   </head>
   <body>
     <div>
+      
       <marquee class="mar" behavior="scroll" scrollamount="8" direction="left">
         <p class="heart">❤️ ❤️ ❤️ ❤️  ❤️ ❤️ ❤️  ❤️ ❤️ ❤️  ❤️ ❤️ ❤️  ❤️ ❤️ ❤️  ❤️ ❤️ ❤️  ❤️ ❤️ ❤️   ❤️ ❤️ ❤️ </p>
         
         </marquee>
       <audio id="love-song" src="./HS-Sant-Kripal-Singh-Ji-Maharaj.mp3"></audio>
       <audio id="love-song2" src="./nonstop-love-mashup-2023-naresh.mp3"></audio>
+     
       <div class="di">
+      <button class="abc1" onclick="pp()">Pause love Song</button>
       <button class="abc" onclick="showLove()">Click here 9th feb </button>
       <button class="abc" onclick="showLove1()">Click here 10th feb </button>
       <button class="abc" onclick="showLove2()">Click here 11th feb </button>
       <button class="abc" onclick="showLove3()">Click here 12th feb </button>
+      <button class="abc1" onclick="pp1()">Play Love Song</button>
     </div>
       <marquee class="mar" behavior="scroll" scrollamount="8" direction="right">
         <img src="./ce7e451b-2d3c-48d7-accd-bad5d93f9028.JPG" alt="Anishka">
@@ -86,23 +101,34 @@
     </div>
     <audio id="love-song" src="./HS-Sant-Kripal-Singh-Ji-Maharaj.mp3"></audio>
     <script>
+        function pp() {
+        document.getElementById("love-song").pause();
+        document.getElementById("love-song2").pause();      
+      }
+      function pp1() {
+        document.getElementById("love-song2").play();      
+      }
       function showLove() {
         document.getElementById("love-song").play();
+        document.getElementById("love-song2").pause();
         alert("I Love You Anishka \nWill you be my valentine \nAnishka Bakshi banegi ???");
         
       }
       function showLove1() {
         document.getElementById("love-song").play();
+        document.getElementById("love-song2").pause();
         alert("Happy Teddy day my cutestest tedduuuuu anishkaaaa");
         
       }
       function showLove2() {
         document.getElementById("love-song2").play();
+        document.getElementById("love-song").pause();
         alert("Happy Hug day my love I love you alot words mai jada express nhi karna aata but kasam se dil se bohot jada i love you ");
         
       }
       function showLove3() {
         document.getElementById("love-song2").play();
+        document.getElementById("love-song").pause();
         alert("So today is promise day sorry vo kal tha choti si galti ho gyi hug day or promise day mai age piche ho gya \n\nBut Date time never matters ,what matter is emotions\n\nHere is my promise i willlll never ever leave you alone my bacha and try my ass off to give you all the happiness and support \n\nI love youuuuuu....... ");
         
       }
