@@ -6,11 +6,12 @@
       body {
         background-image: url("./WhatsApp\ Image\ 2023-01-16\ at\ 11.58.26\ PM.jpeg");
         background-size: cover;
-        height: 100vh;
+        height: 100%;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        overflow: hidden;
+        overflow: hiden;
       }
       button{
         size: 1220px;
@@ -27,7 +28,7 @@
         margin: 0;
        position: relative;
        top: 50%;
-       left: 31rem;
+       left: 20rem;
 
       }
 
@@ -38,13 +39,14 @@
         margin: 0;
        position: relative;
        top: 50%;
-       left: 31rem;
+       left: 20rem;
        
         
       }
 
       .heart {
         font-size: 50px;
+        
       }
     
       .mar img{
@@ -62,8 +64,8 @@
       
       <marquee class="mar" behavior="scroll" scrollamount="8" direction="left">
         <p class="heart">❤️ ❤️ ❤️ ❤️  ❤️ ❤️ ❤️  ❤️ ❤️ ❤️  ❤️ ❤️ ❤️  ❤️ ❤️ ❤️  ❤️ ❤️ ❤️  ❤️ ❤️ ❤️   ❤️ ❤️ ❤️ </p>
-        
-        </marquee>
+      </marquee>
+
       <audio id="love-song" src="./HS-Sant-Kripal-Singh-Ji-Maharaj.mp3"></audio>
       <audio id="love-song2" src="./nonstop-love-mashup-2023-naresh.mp3"></audio>
      
@@ -73,8 +75,10 @@
       <button class="abc" onclick="showLove1()">Click here 10th feb </button>
       <button class="abc" onclick="showLove2()">Click here 11th feb </button>
       <button class="abc" onclick="showLove3()">Click here 12th feb </button>
+      <a href="index1.html"><button class="abc" >Click here 14th feb </button></a>
       <button class="abc1" onclick="pp1()">Play Love Song</button>
     </div>
+
       <marquee class="mar" behavior="scroll" scrollamount="8" direction="right">
         <img src="./ce7e451b-2d3c-48d7-accd-bad5d93f9028.JPG" alt="Anishka">
         <img src="./ea9c1af5-8d23-4542-a3af-ae93b5d48b1f.JPG" alt="Anishka">
@@ -89,17 +93,13 @@
         <img src="./3.JPG" alt="Anishka">
         <img src="./5.JPG" alt="Anishka">
         <img src="./6.JPG" alt="Anishka">
-        
-
-        
-
       </marquee>
+
       <marquee class="mar" behavior="scroll" scrollamount="8" direction="left">
       <p class="heart">❤️ ❤️ ❤️ ❤️  ❤️ ❤️ ❤️  ❤️ ❤️ ❤️  ❤️ ❤️ ❤️  ❤️ ❤️ ❤️  ❤️ ❤️ ❤️  ❤️ ❤️ ❤️   ❤️ ❤️ ❤️  </p>
-      
       </marquee>
     </div>
-    <audio id="love-song" src="./HS-Sant-Kripal-Singh-Ji-Maharaj.mp3"></audio>
+
     <script>
         function pp() {
         document.getElementById("love-song").pause();
